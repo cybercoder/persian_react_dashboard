@@ -1,0 +1,96 @@
+/* font-Vazir */
+@font-face {
+    font-family: Vazir;
+    src: url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.eot');
+    src: url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.woff2') format('woff2'),
+         url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.woff') format('woff'),
+         url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.ttf') format('truetype');
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    font-family: Vazir, 'Roboto';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.ui {
+    font-family: Vazir !important;
+    font-size: 13px !important;
+}
+
+.header{
+    font-family: Vazir, 'Roboto' !important;
+}
+
+input {
+    font-family: Vazir !important;
+}
+
+:root {
+    --top-menu-height: 3em;
+}
+
+.topmenu {
+    direction: rtl;
+    height: var(--top-menu-height) !important;
+    z-index: 999;
+}
+
+.topmenu i.icon {
+    width: auto;
+}
+.ui.compact.vertical.menu .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ui.compact.vertical.menu .item>i.icon {
+    margin: 0 !important;
+}
+.ui.vertical.menu .item>i.icon {
+    float: right !important;
+    margin: 0 0 0 0.5em !important;
+}
+
+.parent {
+    direction: rtl;
+    display: inline-flex;
+    width: 100%;
+}
+
+.side {
+    direction: rtl;
+    transition: width 0.3s;
+    width: 11.9em !important;
+    /* overflow: hidden; */
+    padding-top: var(--top-menu-height);
+    z-index: 99 !important;
+}
+  
+.small-side {
+    width: 4em !important;
+    flex-basis: 4em;
+}
+  
+.content-container {
+    direction: rtl;
+    position: absolute;
+    top: 2em;
+    left: 1.1em;
+    right: 13em;
+    transition: all 0.3s;
+    padding: 1em;
+    /* border: 1px solid tomato; */
+    height: calc(100vh - 3em);
+}
+  
+.small-content {
+    right: 4.6em;
+    
+}
+
+.main {
+    margin-top: var(--top-menu-height) !important;
+}
